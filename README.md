@@ -2,6 +2,8 @@
 
 A pretty .json viewer
 
+![](https://i.imgur.com/RnsmRL5.png)
+
 ## Where to get it
 
 The source code is currently hosted on Github at: https://github.com/sjlva/johnson 
