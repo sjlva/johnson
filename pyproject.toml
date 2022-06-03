@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "johnson"
+version = "0.1.1"
+description = "A simple CLI pretty .json viewer"
+authors = ["sjlva <rafaelsilva@posteo.net>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/sjlva/johnson"
+
+[tool.poetry.scripts]
+johnson = "johnson.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+typer = {extras = ["all"], version = "^0.4.1"}
+rich = {extras = ["all"], version = "^12.4.4"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
