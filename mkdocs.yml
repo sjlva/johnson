@@ -1,0 +1,11 @@
+site_name: Johnson
+repo_url: https://github.com/sjlva/johnson
+repo_name: sjlva/johnson
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+
+markdown_extensions:
+  - attr_list
+
