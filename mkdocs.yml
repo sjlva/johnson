@@ -9,3 +9,9 @@ theme:
 markdown_extensions:
   - attr_list
 
+plugins:
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [johnson]
+
