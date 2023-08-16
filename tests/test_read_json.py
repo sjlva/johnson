@@ -5,7 +5,7 @@ from pytest import raises
 from johnson.read_json import check_if_file_exists, read_json_file
 
 
-def test_file_not_exist():
+def test_file_not_exists():
 
     path_to_file = '../inexistent_path/inexistent_file.json'
     file_exists = check_if_file_exists(path_to_file)
@@ -13,7 +13,7 @@ def test_file_not_exist():
     assert file_exists is False
 
 
-def test_file_exist():
+def test_file_exists():
 
     path_to_file = '../sample_jsons/example_1.json'
     file_exists = check_if_file_exists(path_to_file)
