@@ -2,26 +2,26 @@ name: Pipeline
 on: [push, pull_request]
 
 jobs:
-  test:
+  Test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: setup python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: install poetry
+      - name: Install Poetry
         run: pip install poetry
 
-      - name: install dependencies
+      - name: Install Dependencies
         run: poetry install
 
-      - name: test
-        run: poetry run task test
+      - name: Test
+        run: poetry run task test --cov-report=xml
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
