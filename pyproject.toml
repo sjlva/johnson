@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "johnson"
-version = "0.0.0"
+version = "0.0.1"
 description = "Pretty print .json data in your terminal"
 authors = ["sjlva <rtsilva@bi4all.pt>"]
 readme = "README.md"
