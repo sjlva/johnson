@@ -27,6 +27,8 @@ def johnson(
         data = read_json_file(file)
         console.print_json(data=data)
     elif file.is_dir():
-        console.print('Config is a directory, will use all its file files')
+        console.print('This is a directory')
+        raise typer.Abort()
     elif not file.exists():
         console.print("The file doesn't exist")
+        raise typer.Abort()
