@@ -11,7 +11,11 @@ app = Typer()
 
 
 @app.command()
-def johnson(file: Annotated[str, typer.Option('--file', '-f')]):
+def johnson(
+    file: Annotated[
+        str, typer.Option('--file', '-f', help='path to json file')
+    ]
+):
 
     data = read_json_file(file)
 
