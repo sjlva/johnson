@@ -51,7 +51,7 @@ johnson -f example.json
 + See all commands available
 
 ```bash
-poetry run johnson --help
+johnson --help
 ```
 
 ```bash
