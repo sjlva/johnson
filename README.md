@@ -17,7 +17,7 @@ pip install -U johnson
 + Pretty print your json file
 
 ```bash
-johnson -f '../example.json'
+johnson -f example.json
 ```
 
 ```bash
@@ -58,7 +58,7 @@ poetry run johnson --help
  Usage: johnson [OPTIONS]
 
 ╭─ Options ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│ *  --file                -f      TEXT  path to json file [default: None] [required]                                               │
+│ *  --file                -f      PATH  path to json file [default: None] [required]                                               │
 │    --install-completion                Install completion for the current shell.                                                  │
 │    --show-completion                   Show completion for the current shell, to copy it or customize the installation.           │
 │    --help                              Show this message and exit.                                                                │
