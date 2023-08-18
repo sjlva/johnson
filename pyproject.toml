@@ -1,9 +1,22 @@
 [tool.poetry]
 name = "johnson"
-version = "0.1.0"
-description = ""
+version = "0.0.0"
+description = "Pretty print .json data in your terminal"
 authors = ["sjlva <rtsilva@bi4all.pt>"]
 readme = "README.md"
+license = "GPLv3"
+packages = [{include = "johnson"}]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Environment :: Console",
+  "Development Status :: 5 - Production/Stable",
+  "Natural Language :: English"
+]
+
+[tool.poetry.urls]
+"Documentation" = "https://pyjohnson.readthedocs.io/en/latest/"
+"Issue Tracker" = "https://github.com/sjlva/johnson/issues"
+"Source Code" = "https://github.com/sjlva/johnson"
 
 [tool.poetry.scripts]
 johnson = "johnson.cli:app"
